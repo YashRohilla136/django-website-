@@ -1,0 +1,23 @@
+body{
+    background-image: url('../images/4.jpg');
+    background-repeat: no-repeat;
+   background-size:cover;
+
+}
+
+
+.img {
+    padding: 2.25rem;
+    background-color: black;
+    border: 3px groove red;
+    border-radius: 21.25rem;
+    max-width: 100%;
+    height: 100%;
+}
+p{
+    color: white;
+    font-size: large;
+}
+#gp{
+    width: 100%;
+}

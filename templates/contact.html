@@ -1,0 +1,56 @@
+{% extends "base.html" %} {% block body %}
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4 bg-light">
+      <h3 class="bg-dark text-center text-white">Contact Us</h3>
+
+      <form action="" method="post">
+        {% csrf_token %}
+        <div class="form-group mt-4">
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your email"
+            class="form-control"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Enter Your Mobile Number"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group mt-2">
+          <label>How Can I Help You.....</label>
+          <textarea
+            name="desc"
+            class="form-control"
+            cols="10"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <div class="d-grid gap-2 mt-4">
+          <button class="btn btn-dark" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+{% endblock body %}
